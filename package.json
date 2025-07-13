@@ -1,0 +1,26 @@
+{
+  "name": "weeklytask2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "lint": "eslint .",
+    "fix": "eslint --fix"
+  },
+  "keywords": [
+    "weeklytask2"
+  ],
+  "author": "lala",
+  "license": "MIT",
+  "description": "project weeklytask week 2 koda",
+  "devDependencies": {
+    "@eslint/js": "^9.31.0",
+    "@eslint/json": "^0.13.0",
+    "@stylistic/eslint-plugin": "^5.1.0",
+    "eslint": "^9.31.0",
+    "globals": "^16.3.0",
+    "nodemon": "^3.1.10"
+  }
+}
