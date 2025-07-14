@@ -17,7 +17,7 @@ const fetchData = (status) => {
 };
 
 //then-catch : untuk menagatasi error(error handling) dari promise
-fetchData(true) //memanggil fungsi dengan status true
+fetchData() //memanggil fungsi dengan status true
   .then((status) => {
     //jika berhasil/resolve
     console.log(status); //menampilkan "Data berhasil disimpan"
@@ -32,7 +32,7 @@ fetchData(true) //memanggil fungsi dengan status true
 async function getData() {
   try {
     //mencoba jalankan
-    const status = await fetchData(true); //tunggu hasil dari fetchData
+    const status = await fetchData(false); //tunggu hasil dari fetchData
     console.log(status); //menampilkan "Data berhasil disimpan"
   } catch (err) {
     //kalau error ditangkap disini
