@@ -6,12 +6,15 @@ const divideAndSort = require("./src/task4.js");
 const main = require("./src/task5.js");
 
 //pemanggilan fungsi
-fetchData(true)
+//then-catch : untuk menagatasi error(error handling) dari promise
+fetchData(true) //memanggil fungsi dengan status true
   .then((status) => {
-    console.log(status);
+    //jika berhasil/resolve
+    console.log(status); //menampilkan "Data berhasil disimpan"
   })
   .catch((err) => {
-    console.log(err);
+    //jika gagal/reject
+    console.log(err); //menampilkan "Gagal mengambil data"
   });
 getData();
 
