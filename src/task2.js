@@ -17,7 +17,7 @@ const getDataFromServer = (status, callback) => {
 function processData(data, err) {
   try {
     //coba jalankan
-    if (err) throw err; //jika ada eror langsung dilempar ke catch
+    if (err) throw err; //jika ada error langsung dilempar ke catch
     console.log(data); //jika tidak ada error tampilkan data/products
   } catch (err) {
     //menangkap error
