@@ -11,4 +11,4 @@ const divideAndSort = (num) => {
   console.log(result); //memanggil hasil akhir
 };
 
-module.exports = divideAndSort;
+module.exports = divideAndSort; //eksport
