@@ -23,4 +23,4 @@ async function getNameAndDomisili() {
   }
 }
 
-module.exports = getNameAndDomisili;
+module.exports = getNameAndDomisili; //eksport
