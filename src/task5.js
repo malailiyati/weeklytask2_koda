@@ -72,7 +72,7 @@ function main() {
             } else {
               //mengganti data lama dengan data baru
               data[index] = newItem;
-              fs.writeFileSync(filePath, JSON.stringify(data, null, 1)); //menyimpan data baru ke file
+              fs.writeFileSync(filePath, JSON.stringify(data, target, 1)); //menyimpan data baru ke file
               console.log("item update successfully");
             }
           } catch (err) {
