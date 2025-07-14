@@ -16,23 +16,12 @@ const fetchData = (status) => {
   });
 };
 
-//then-catch : untuk menagatasi error(error handling) dari promise
-fetchData() //memanggil fungsi dengan status true
-  .then((status) => {
-    //jika berhasil/resolve
-    console.log(status); //menampilkan "Data berhasil disimpan"
-  })
-  .catch((err) => {
-    //jika gagal/reject
-    console.log(err); //menampilkan "Gagal mengambil data"
-  });
-
 //async await : fitur untuk mempermudah dalam menangani proses asynchronous
 //try-catch : untuk mengatasi error pada async/await
 async function getData() {
   try {
     //mencoba jalankan
-    const status = await fetchData(false); //tunggu hasil dari fetchData
+    const status = await fetchData(true); //tunggu hasil dari fetchData
     console.log(status); //menampilkan "Data berhasil disimpan"
   } catch (err) {
     //kalau error ditangkap disini
